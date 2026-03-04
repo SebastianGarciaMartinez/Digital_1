@@ -2,7 +2,7 @@
 Repositorio Digital 1 2026-1 Sebastian García
 ## Multiplicador
 <img width="987" height="3060" alt="Multiplicador" src="https://github.com/user-attachments/assets/19887e52-3eaf-4fda-95ee-c532f75bd993" />
-<img width="987" height="3200" alt="Multiplicador" src="https://github.com/user-attachments/assets/206db3d3-ca5f-46cf-be53-8803b679c556" />
+
 
 ## Contador de 1s
 
