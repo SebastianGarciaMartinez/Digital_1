@@ -2,7 +2,10 @@
 Repositorio Digital 1 2026-1 Sebastian García
 ## Multiplicador
 
-Se presenta el diagrama de flujo, datapath y maquina de estados correspondiente al multiplicador de la calculadora, este incluyr la opción de complemento a 2 para poder realizar multiplicaciones con números negativos sin problema
+En esta sección se presenta el diseño del multiplicador utilizado en la calculadora. 
+El sistema está compuesto por un diagrama de flujo, el datapath y la máquina de estados que controla su funcionamiento.
+
+El multiplicador implementa el algoritmo de multiplicación binaria con desplazamientos y sumas, e incluye el manejo de números negativos mediante el uso de complemento a dos.
 
 ### Diagrama de flujo
 
