@@ -22,4 +22,16 @@ El multiplicador implementa el algoritmo de multiplicación binaria con desplaza
 
 ## Contador de 1s
 
-<img width="2300" height="2518" alt="Paridad" src="https://github.com/user-attachments/assets/5856cc76-686e-4990-8c4f-ec527375c0e6" />
+### Diagrama de flujo
+
+<img width="1203" height="2520" alt="Paridad" src="https://github.com/user-attachments/assets/eb3aca42-b55d-41ab-9ae1-c4c1a06a576d" />
+
+
+### Datapath
+
+
+
+### Máquina de estados
+
+
+
