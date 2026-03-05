@@ -1,7 +1,20 @@
 # Digital_1
 Repositorio Digital 1 2026-1 Sebastian García
 ## Multiplicador
-<img width="987" height="3060" alt="Multiplicador" src="https://github.com/user-attachments/assets/19887e52-3eaf-4fda-95ee-c532f75bd993" />
+
+Se presenta el diagrama de flujo, datapath y maquina de estados correspondiente al multiplicador de la calculadora, este incluyr la opción de complemento a 2 para poder realizar multiplicaciones con números negativos sin problema
+
+### Diagrama de flujo
+
+<img width="814" height="3325" alt="Multiplicador (2)" src="https://github.com/user-attachments/assets/86f99765-a8e6-4289-bd7d-93f5da25a980" />
+
+### Datapath
+
+<img width="1140" height="1808" alt="Multiplicador (3)" src="https://github.com/user-attachments/assets/c29cc741-b883-4661-a037-6b02199ef2ab" />
+
+### Máquina de estados
+
+<img width="2169" height="1079" alt="Multiplicador (1)" src="https://github.com/user-attachments/assets/df69a1d0-f077-47a9-82f4-95907cccfc7e" />
 
 
 ## Contador de 1s
