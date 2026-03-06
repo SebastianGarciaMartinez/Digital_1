@@ -66,6 +66,7 @@ Finalmente se imprime el número de unos encontrados y el sistema termina su eje
 
 ### Datapath
 
+<img width="1326" height="977" alt="Paridad (1)" src="https://github.com/user-attachments/assets/6ee30405-0bd6-4be7-8d9b-60264531d6fa" />
 
 
 ### Máquina de estados
