@@ -73,3 +73,6 @@ Finalmente se imprime el número de unos encontrados y el sistema termina su eje
 
 <img width="1294" height="843" alt="Paridad (3)" src="https://github.com/user-attachments/assets/b1ac9a28-34df-499c-b8f4-66d8a4babbee" />
 
+## Divisor
+
+
