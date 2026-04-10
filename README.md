@@ -75,6 +75,8 @@ Finalmente se imprime el número de unos encontrados y el sistema termina su eje
 
 ## Divisor
 
+En esta sección se presenta el diseño del divisor utilizado en la calculadora. 
+El sistema está compuesto por un diagrama de flujo, el datapath y la máquina de estados que controla su funcionamiento.
 
 El divisor binario es un sistema digital diseñado para realizar la operación de división entre dos números en formato binario, obteniendo como resultado un cociente y un residuo. Este proceso se lleva a cabo de manera secuencial.
 
@@ -93,4 +95,7 @@ En esencia, el divisor binario replica el procedimiento de la división tradicio
 
 <img width="1136" height="797" alt="Divisor (2)" src="https://github.com/user-attachments/assets/274f69a2-a986-46b2-a30e-af0e51fda880" />
 
+### Máquina de estados
+
+<img width="2367" height="995" alt="Divisor (3)" src="https://github.com/user-attachments/assets/ca101987-07f9-4f17-8c42-9897f80f9489" />
 
