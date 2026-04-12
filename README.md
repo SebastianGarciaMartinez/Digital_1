@@ -1,5 +1,11 @@
 # Digital_1
 Repositorio Digital 1 2026-1 Sebastian García
+
+## Tareas
+### Contador de 1s
+### Calculadora
+#### 
+
 ## Multiplicador
 
 En esta sección se presenta el diseño del multiplicador utilizado en la calculadora. 
