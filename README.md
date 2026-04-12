@@ -3,8 +3,14 @@ Repositorio Digital 1 2026-1 Sebastian García
 
 ## Tareas
 ### Contador de 1s
+
 ### Calculadora
-#### 
+
+#### Divisor
+
+#### Multiplicador
+
+## Proyecto
 
 ## Multiplicador
 
