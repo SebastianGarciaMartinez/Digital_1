@@ -14,7 +14,7 @@ En esencia, el divisor binario replica el procedimiento de la división tradicio
 
 ### Diagrama de flujo
 
-<img width="795" height="1906" alt="Divisor (1)" src="https://github.com/user-attachments/assets/875eaeea-55f0-4660-b658-b29027820e37" />
+<img width="1256" height="2122" alt="Divisor (4)" src="https://github.com/user-attachments/assets/1da40663-fe4f-4806-bbc9-f9b51f59d5fa" />
 
 ### Datapath
 
