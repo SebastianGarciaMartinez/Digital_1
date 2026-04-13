@@ -2,122 +2,15 @@
 Repositorio Digital 1 2026-1 Sebastian García
 
 ## Tareas
-### Contador de 1s
+### [Contador de 1s](Tareas/Contador1s.md)
 
 ### Calculadora
 
-#### Divisor
+#### [Divisor](Calculadora/Divisor.md)
 
-#### Multiplicador
+#### [Multiplicador](Calculadora/Multiplicador.md)
 
 ## Proyecto
 
-## Multiplicador
 
-En esta sección se presenta el diseño del multiplicador utilizado en la calculadora. 
-El sistema está compuesto por un diagrama de flujo, el datapath y la máquina de estados que controla su funcionamiento.
-
-El sistema implementa un multiplicador binario secuencial con manejo de signo, basado en el algoritmo de corrimiento y suma. Este método permite realizar la multiplicación de dos números binarios utilizando operaciones simples como sumas, desplazamientos y evaluaciones lógicas, ejecutadas de manera iterativa.
-
-El proceso inicia con una etapa de inicialización donde se cargan los operandos de entrada y se prepara un acumulador parcial en cero. Adicionalmente, se determina el signo del resultado final mediante una operación lógica entre los bits más significativos de los operandos, permitiendo trabajar internamente con valores positivos.
-
-Si alguno de los operandos es negativo, se convierte a su equivalente en complemento a dos, garantizando que la operación principal se realice con valores positivos. Esto simplifica el diseño y evita manejar directamente operaciones con signo durante el cálculo.
-
-Una vez preparados los datos, el sistema entra en un ciclo iterativo controlado por un contador. En cada iteración, se evalúa el bit menos significativo del multiplicador. Si este bit es igual a uno, se suma el multiplicando al acumulador parcial. Independientemente del resultado, se realiza un corrimiento del multiplicando hacia la izquierda y del multiplicador hacia la derecha, ajustando así los pesos binarios de cada operando. Este proceso se repite hasta que el contador llega a cero.
-
-Al finalizar las iteraciones, si el resultado debe ser negativo (según el signo calculado inicialmente), se convierte el resultado final a complemento a dos. Finalmente, el sistema activa una señal de finalización indicando que el producto ha sido calculado correctamente.
-
-Este enfoque secuencial permite implementar la multiplicación binaria de manera eficiente en hardware, reduciendo la complejidad del circuito al reutilizar los mismos recursos en múltiples ciclos de operación.
-
-### Diagrama de flujo
-
-<img width="814" height="3325" alt="Multiplicador (2)" src="https://github.com/user-attachments/assets/86f99765-a8e6-4289-bd7d-93f5da25a980" />
-
-### Datapath
-
-<img width="1140" height="1808" alt="Multiplicador (3)" src="https://github.com/user-attachments/assets/c29cc741-b883-4661-a037-6b02199ef2ab" />
-
-### Máquina de estados
-
-<img width="2169" height="1079" alt="Multiplicador (1)" src="https://github.com/user-attachments/assets/df69a1d0-f077-47a9-82f4-95907cccfc7e" />
-
-
-## Contador de 1s
-
-
-El diagrama de flujo describe el funcionamiento de un sistema digital encargado de contar la cantidad de bits en 1 presentes en una trama binaria y posteriormente determinar su paridad. El proceso comienza con la lectura de la trama y la inicialización de los contadores. Posteriormente, el sistema analiza cada bit de la trama mediante desplazamientos hacia la derecha hasta procesar todos los bits. Finalmente, se verifica si la cantidad de unos es par o impar para aceptar o rechazar la trama.
-
-### Inicialización
-
-El sistema inicia en el estado Inicio, donde se realiza la lectura de la trama de entrada. En este punto se inicializan dos registros:
-
-Contador_1s = 0, que almacenará la cantidad de bits con valor 1 encontrados.
-
-Contador_bits = n, que representa la cantidad total de bits que se deben analizar en la trama.
-
-### Recorrido de la trama
-
-Una vez inicializados los registros, el sistema entra en un ciclo donde se procesan los bits de la trama uno por uno. Primero se verifica la condición:
-
-¿Contador_bits = 0?
-
-Si la condición es verdadera, significa que todos los bits de la trama han sido analizados y el sistema pasa a la etapa de verificación de paridad. Si es falsa, aún quedan bits por procesar y se continúa con la evaluación del bit menos significativo.
-
-### Verificación del bit
-
-El sistema revisa el bit menos significativo de la trama (Trama(0)). Si Trama(0) = 1, se incrementa el contador de unos:
-
-Si Trama(0) = 0, no se modifica el contador.
-
-### Desplazamiento de la trama
-
-Después de evaluar el bit, la trama se desplaza una posición hacia la derecha. De esta forma el siguiente bit pasa a ser el menos significativo. Simultáneamente se reduce el contador de bits. Esto permite llevar control de cuántos bits quedan por procesar.
-
-Luego el sistema regresa al inicio del ciclo hasta analizar toda la trama.
-
-### Verificación de paridad
-
-Una vez procesados todos los bits, el sistema evalúa la condición de paridad.Si el resultado es verdadero, la cantidad de unos es par, por lo que la trama se acepta. Si es falso, la cantidad de unos es impar, por lo que la trama se rechaza.
-
-Finalmente se imprime el número de unos encontrados y el sistema termina su ejecución.
-
-### Diagrama de flujo
-
-<img width="1203" height="2520" alt="Paridad" src="https://github.com/user-attachments/assets/eb3aca42-b55d-41ab-9ae1-c4c1a06a576d" />
-
-
-### Datapath
-
-<img width="1326" height="977" alt="Paridad (1)" src="https://github.com/user-attachments/assets/6ee30405-0bd6-4be7-8d9b-60264531d6fa" />
-
-
-### Máquina de estados
-
-<img width="1294" height="843" alt="Paridad (3)" src="https://github.com/user-attachments/assets/b1ac9a28-34df-499c-b8f4-66d8a4babbee" />
-
-## Divisor
-
-En esta sección se presenta el diseño del divisor utilizado en la calculadora. 
-El sistema está compuesto por un diagrama de flujo, el datapath y la máquina de estados que controla su funcionamiento.
-
-El divisor binario es un sistema digital diseñado para realizar la operación de división entre dos números en formato binario, obteniendo como resultado un cociente y un residuo. Este proceso se lleva a cabo de manera secuencial.
-
-El funcionamiento del divisor se basa en comparar y ajustar progresivamente el valor del dividendo con respecto al divisor. En cada iteración, el sistema evalúa si es posible realizar una resta sin que el resultado sea negativo. Dependiendo de esta evaluación, se decide si se mantiene la resta o si es necesario revertirla, lo cual determina el valor de cada bit del cociente.
-
-A lo largo del proceso, el sistema realiza desplazamientos y operaciones aritméticas que permiten refinar el resultado en cada ciclo, acercándose gradualmente al cociente correcto. Este enfoque evita realizar la división de una sola vez, lo cual sería más costoso en términos de hardware, y en su lugar utiliza un método eficiente basado en repeticiones controladas.
-
-En esencia, el divisor binario replica el procedimiento de la división tradicional, pero adaptado al contexto digital, donde las decisiones se toman en función de condiciones lógicas y los resultados se construyen de forma incremental. Este tipo de implementación es ampliamente utilizado en sistemas digitales debido a su eficiencia, simplicidad y facilidad de control.
-
-
-### Diagrama de flujo
-
-<img width="795" height="1906" alt="Divisor (1)" src="https://github.com/user-attachments/assets/875eaeea-55f0-4660-b658-b29027820e37" />
-
-### Datapath
-
-<img width="1136" height="797" alt="Divisor (2)" src="https://github.com/user-attachments/assets/274f69a2-a986-46b2-a30e-af0e51fda880" />
-
-### Máquina de estados
-
-<img width="2367" height="995" alt="Divisor (3)" src="https://github.com/user-attachments/assets/ca101987-07f9-4f17-8c42-9897f80f9489" />
 
