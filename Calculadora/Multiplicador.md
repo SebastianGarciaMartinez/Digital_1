@@ -27,3 +27,4 @@ Este enfoque secuencial permite implementar la multiplicación binaria de manera
 
 <img width="2169" height="1079" alt="Multiplicador (1)" src="https://github.com/user-attachments/assets/df69a1d0-f077-47a9-82f4-95907cccfc7e" />
 
+## [Código](Calculadora/Multiplicador.v)
