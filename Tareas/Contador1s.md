@@ -49,4 +49,5 @@ Finalmente se imprime el número de unos encontrados y el sistema termina su eje
 
 ### Máquina de estados
 
-<img width="1294" height="843" alt="Paridad (3)" src="https://github.com/user-attachments/assets/b1ac9a28-34df-499c-b8f4-66d8a4babbee" />
+<img width="1637" height="1164" alt="Paridad (6)" src="https://github.com/user-attachments/assets/65b2bbfb-7d4b-43e7-bc86-592858caa618" />
+
