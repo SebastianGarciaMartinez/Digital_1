@@ -10,6 +10,8 @@ Repositorio Digital 1 2026-1 Sebastian García
 
 #### [Multiplicador](Calculadora/Multiplicador.md)
 
+### [Raiz](Calculadora/Raiz.md)
+
 ## Proyecto
 
 
