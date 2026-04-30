@@ -1,4 +1,4 @@
-## Divisor
+# Divisor
 
 En esta sección se presenta el diseño del divisor utilizado en la calculadora. 
 El sistema está compuesto por un diagrama de flujo, el datapath y la máquina de estados que controla su funcionamiento.
@@ -12,14 +12,14 @@ A lo largo del proceso, el sistema realiza desplazamientos y operaciones aritmé
 En esencia, el divisor binario replica el procedimiento de la división tradicional, pero adaptado al contexto digital, donde las decisiones se toman en función de condiciones lógicas y los resultados se construyen de forma incremental. Este tipo de implementación es ampliamente utilizado en sistemas digitales debido a su eficiencia, simplicidad y facilidad de control.
 
 
-### Diagrama de flujo
+## Diagrama de flujo
 
 <img width="1256" height="2122" alt="Divisor (4)" src="https://github.com/user-attachments/assets/1da40663-fe4f-4806-bbc9-f9b51f59d5fa" />
 
-### Datapath
+## Datapath
 
 <img width="1136" height="797" alt="Divisor (2)" src="https://github.com/user-attachments/assets/274f69a2-a986-46b2-a30e-af0e51fda880" />
 
-### Máquina de estados
+## Máquina de estados
 
 <img width="2367" height="995" alt="Divisor (3)" src="https://github.com/user-attachments/assets/ca101987-07f9-4f17-8c42-9897f80f9489" />
