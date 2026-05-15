@@ -13,4 +13,7 @@ El proceso continúa hasta completar todas las iteraciones necesarias según el 
 
 ## Datapath
 
+<img width="1142" height="1370" alt="Paridad (8)" src="https://github.com/user-attachments/assets/7844dfdd-40b9-48db-b14b-198ba43b7a75" />
+
+
 ## Máquina de Estados
